@@ -215,7 +215,7 @@
 		settings.headers = extend(baseHeaders, settings.headers || {})
 
 		xhr.onreadystatechange = function() {
-			var result, dataType, error = false;
+			var result, error = false;
 
 			if (xhr.readyState == 4) {
 				clearTimeout(abortTimeout);
